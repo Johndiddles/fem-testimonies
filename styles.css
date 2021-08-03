@@ -82,11 +82,11 @@ body {
 }
 
 .status {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 70%);
     font-size: 0.8em;
 }
 .title {
-    color: hsl(0, 0%, 81%);
+    color: hsl(0, 0%, 87%);
     font-weight: 600;
     font-size: 1.1em;
     margin: 0.5em 0;
@@ -98,6 +98,12 @@ body {
 }
 .large {
     min-width: 66%;
+}
+
+.large:first-child {
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
 }
 
 .small {
@@ -140,7 +146,7 @@ body {
 
 @media screen and (max-width: 800px){
     body {
-        padding: 1em;
+        padding: 3em 0.5em;
         width: 100%;
     }
     .main {
@@ -159,6 +165,9 @@ body {
     }
     .large {
         width: 100%;
+    }
+    .large:first-child {
+        background-position: 90% 0%;
     }
     .small {
         width: 100%;
